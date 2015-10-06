@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lastfm_red">#ff8c001e</color>
+    <color name="lastfm_dark_red">#ff60001a</color>
+    <color name="lastfm_dark_gray">#999999</color>
+    <color name="lastfm_light_gray">#cccccc</color>
+    <color name="lastfm_white">#ffffff</color>
+    <color name="lastfm_clear">#00000000</color>
+</resources>

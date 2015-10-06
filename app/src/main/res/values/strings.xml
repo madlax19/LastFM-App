@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LastFm</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">List</string>
+    <string name="title_activity_detail">Artist detail</string>
+
+    <string name="tab1_title">Full info</string>
+    <string name="tab2_title">Top tracks</string>
+    <string name="tab3_title">Similar</string>
+
+    <string name="action_share">Share</string>
+
+</resources>

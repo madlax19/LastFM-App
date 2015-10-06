@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="Search"
+            android:inputType="textVisiblePassword|text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/searchButton"
+            android:layout_toStartOf="@+id/searchButton"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:id="@+id/searchButton"
+            android:onClick="buttonSearch"
+            android:text="Go"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/inputSearch"
+            style="@style/LastFMListStyle"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistSpinner"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            style="?android:attr/progressBarStyleLarge"/>
+    </RelativeLayout>
+
+</FrameLayout>

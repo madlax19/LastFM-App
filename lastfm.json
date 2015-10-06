@@ -1,0 +1,178 @@
+{
+    "type": "database",
+    "name": "lastfm",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "artist",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE artist (mbid STRING PRIMARY KEY NOT NULL UNIQUE, name STRING NOT NULL, image STRING, bio STRING, yearformed INT, placeformed STRING)",
+            "columns": [
+                {
+                    "name": "mbid",
+                    "type": "STRING",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY "
+                        },
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "image",
+                    "type": "STRING"
+                },
+                {
+                    "name": "bio",
+                    "type": "STRING"
+                },
+                {
+                    "name": "yearformed",
+                    "type": "INT"
+                },
+                {
+                    "name": "placeformed",
+                    "type": "STRING"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "top_tracks",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE top_tracks (mbid STRING PRIMARY KEY NOT NULL UNIQUE, name STRING NOT NULL, playcount INT, listeners INT, image STRING)",
+            "columns": [
+                {
+                    "name": "mbid",
+                    "type": "STRING",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY "
+                        },
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "playcount",
+                    "type": "INT"
+                },
+                {
+                    "name": "listeners",
+                    "type": "INT"
+                },
+                {
+                    "name": "image",
+                    "type": "STRING"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "similar",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE similar (name STRING PRIMARY KEY UNIQUE NOT NULL, image STRING)",
+            "columns": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE "
+                        },
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "image",
+                    "type": "STRING"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "member",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE member (name STRING PRIMARY KEY UNIQUE NOT NULL, yearfrom INT)",
+            "columns": [
+                {
+                    "name": "name",
+                    "type": "STRING",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY "
+                        },
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE "
+                        },
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "yearfrom",
+                    "type": "INT"
+                }
+            ],
+            "rows": [
+            ]
+        }
+    ]
+}

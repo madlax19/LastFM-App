@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/lastfm_red</item>
+        <item name="colorPrimaryDark">@color/lastfm_dark_red</item>
+        <item name="android:tabWidgetStyle">@style/AppTheme.TabWidgetStyle</item>
+        <item name="colorAccent">@color/lastfm_red</item>
+    </style>
+
+    <style name="AppTheme.TabWidgetStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/tab_bar_indicator</item>
+    </style>
+
+    <style name="LastFMListStyle">
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+
+    <style name="LastFMListStyle.Item">
+        <item name="android:background">@drawable/touch_selector</item>
+    </style>
+
+</resources>
